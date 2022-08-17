@@ -12,5 +12,11 @@ public class Gallery {
     this.till= till;
     }
 
-
+    public float getTill(){
+        return till;
+    }
+    
+    public void acceptPayment(float price) { 
+        till += price;
+        }
 }
