@@ -4,7 +4,7 @@ public class Artwork {
     private Artist artist;
     private float price;
     private float nft;
-    private Customer customer;
+
 
     public Artwork(String title, Artist artist, float price, float nft){
         this.title = title;
@@ -14,9 +14,12 @@ public class Artwork {
 
     }
 
-    public void buyArtwork(){
-        if(customer.getWallet() > this.price);
-
+    public float getPrice() {
+        return price;
     }
 
-}
+   
+
+ }
+
+
