@@ -11,4 +11,6 @@ public class Gallery {
     this.name= name;
     this.till= till;
     }
+    
+    
 }
