@@ -3,8 +3,10 @@ public class Main {
 
 
         Gallery gallery1 = new Gallery("Tate Modern", 1000);
-        
-        System.out.println();
+
+
+
+
 
 
     }
