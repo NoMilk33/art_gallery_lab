@@ -5,18 +5,17 @@ public class Customer {
     private Artwork artwork;
     private Gallery gallery;
 
-    public Customer(String name, float wallet, Artwork artwork, Gallery gallery) {
+    public Customer(String name, float wallet) {
         this.name = name;
         this.wallet = wallet;
-        this.artwork = artwork;
-        this.gallery = gallery;
+
     }
 
     public float getWallet() {
         return wallet;
     }
 
-    public void buyArtwork() {
+    public void buyArtwork(Artwork artwork) {
         if (this.wallet >= artwork.getPrice()) {
             // wallet goes down by price value
             wallet -= artwork.getPrice();
