@@ -16,7 +16,7 @@ public class Artwork {
 
     }
 // Here we have to create a getter for our price. If we enter this getPrice at any time
-// it will return the current price.
+// it will return our 
     public float getPrice() {
         return price;
     }

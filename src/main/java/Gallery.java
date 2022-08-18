@@ -6,7 +6,7 @@ public class Gallery {
     private int till;
     private ArrayList<Artwork> artwork;
 
-    public Gallery(String name, int till) {
+    public Gallery(String name, int till, Artwork artwork) {
     this.artwork= new ArrayList<>();
     this.name= name;
     this.till= till;
@@ -15,8 +15,8 @@ public class Gallery {
     public float getTill(){
         return till;
     }
-
+// Gallery accepts payment, till balance increases by price of artwork
     public void acceptPayment(float price) {
-        till += artwork.getPrice();
+        till += price;
         }
 }

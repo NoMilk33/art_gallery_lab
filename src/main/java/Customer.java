@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Customer {
 
     private String name;
@@ -8,6 +10,8 @@ public class Customer {
     public Customer(String name, float wallet) {
         this.name = name;
         this.wallet = wallet;
+        this.artwork = new ArrayList<>();
+        
 
     }
 
@@ -15,7 +19,7 @@ public class Customer {
         return wallet;
     }
 
-    public void payGallery() {
+    public void payGallery(Artwork artwork) {
         if (this.wallet >= artwork.getPrice()) {
             // wallet goes down by price value
             wallet -= artwork.getPrice();
