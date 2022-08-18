@@ -11,8 +11,6 @@ public class Customer {
         this.name = name;
         this.wallet = wallet;
         this.artwork = new ArrayList<>();
-        
-
     }
 
     public float getWallet() {
