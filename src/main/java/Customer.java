@@ -2,7 +2,7 @@ public class Customer {
 
     private String name;
     private float wallet;
-    private Artwork artwork;
+    private ArrayList<Artwork> artwork;
     private Gallery gallery;
 
     public Customer(String name, float wallet) {
@@ -15,7 +15,7 @@ public class Customer {
         return wallet;
     }
 
-    public void buyArtwork(Artwork artwork) {
+    public void payGallery() {
         if (this.wallet >= artwork.getPrice()) {
             // wallet goes down by price value
             wallet -= artwork.getPrice();

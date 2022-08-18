@@ -17,6 +17,6 @@ public class Gallery {
     }
 
     public void acceptPayment(float price) {
-        till += artwork1.getPrice();
+        till += artwork.getPrice();
         }
 }
